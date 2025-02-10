@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe Game</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .project {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .project-title {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        .project-description {
+            margin-bottom: 10px;
+        }
+        .technologies {
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+        .how-to-play {
+            margin-bottom: 10px;
+        }
+        .game-mechanics {
+            margin-bottom: 10px;
+        }
+        .methodology {
+            margin-bottom: 10px;
+        }
+        .tools {
+            margin-bottom: 10px;
+        }
+        .code-example { /* Style for code snippets */
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto; /* Add horizontal scrollbar if code overflows */
+            font-family: monospace; /* Use monospace font for code */
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>My Project</h1>
+
+    <div class="project">
+        <h2 class="project-title">Tic-Tac-Toe Game</h2>
+        <div class="project-description">
+            A classic Tic-Tac-Toe game implemented in C++.  This project demonstrates fundamental programming concepts, including game logic, user input, and basic AI.
+        </div>
+        <div class="technologies">
+            Technologies: C++
+        </div>
+
+        <div class="how-to-play">
+            <h3>How to Play:</h3>
+            <p>
+                Two players take turns marking spaces in a 3x3 grid. The first player to get three of their marks in a row (horizontally, vertically, or diagonally) wins. If all spaces are filled and no player has won, the game is a draw.
+            </p>
+        </div>
+
+        <div class="game-mechanics">
+            <h3>Game Mechanics:</h3>
+            <p>
+                The game uses a 2D array (or vector of vectors) to represent the Tic-Tac-Toe board.  User input is handled to get the player's move. The game logic checks for winning conditions and draw conditions after each move.  A simple AI (e.g., using minimax or a random move strategy) can be implemented for single-player mode.
+            </p>
+        </div>
+
+        <div class="methodology">
+            <h3>Methodology:</h3>
+            <p>
+                The project was developed using an iterative approach.  First, the basic game board and user input were implemented.  Then, the win/draw checking logic was added.  Testing was performed throughout the development process to ensure the game's functionality.
+            </p>
+        </div>
+
+        <div class="tools">
+            <h3>Tools:</h3>
+            <p>
+                A C++ compiler (e.g., g++) was used to compile the code.  A text editor (e.g., VS Code, Sublime Text, or any IDE) was used for writing the code.  Debugging tools were used to identify and fix any issues.
+            </p>
+        </div>
+
+        <div class="code-example">
+            <h3>Code Example (Illustrative - Simplified):</h3>
+            <pre>
+                <code>
+// Example: Checking for a win (simplified)
+bool checkWin(char board[3][3], char player) {
+    for (int i = 0; i < 3; i++) {
+        if (board[i][0] == player && board[i][1] == player && board[i][2] == player) return true; // Row win
+        if (board[0][i] == player && board[1][i] == player && board[2][i] == player) return true; // Column win
+    }
+    if (board[0][0] == player && board[1][1] == player && board[2][2] == player) return true; // Diagonal win
+    if (board[0][2] == player && board[1][1] == player && board[2][0] == player) return true; // Other diagonal win
+    return false;
+}
+                </code>
+            </pre>
+        </div>
+    </div>
+
+</body>
+</html>
