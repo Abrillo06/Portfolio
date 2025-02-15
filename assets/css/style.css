@@ -668,6 +668,12 @@ footer{
     .project-box{
         width: 80%;
     }
+    .experience-container{
+        justify-content: center;
+    }
+    .experience-box{
+        width: 80%;
+    }
 
 }
 
@@ -677,7 +683,7 @@ footer{
     .featured-name{
         font-size: 40px;
     }
-    .project-box{
+    .project-box,.experience-box{
         width: 100%;
     }
     .form-inputs{
