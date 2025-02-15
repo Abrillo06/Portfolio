@@ -683,7 +683,10 @@ footer{
     .featured-name{
         font-size: 40px;
     }
-    .project-box,.experience-box{
+    .project-box{
+        width: 100%;
+    }
+    .experience-box{
         width: 100%;
     }
     .form-inputs{
